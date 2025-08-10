@@ -1,0 +1,141 @@
+.main {
+    max-width: 1100px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-card);
+    padding: 40px 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(42, 126, 221, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    gap: 2rem;
+    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.child {
+    margin-left: 0;
+    line-height: 2px;
+    padding: 20px;
+    width: 70%;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+.btn {
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    width: auto;
+    margin-left: 0;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(42, 126, 221, 0.07);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    outline: none;
+}
+
+.btn:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-text-light);
+    font-weight: 700;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(42, 126, 221, 0.13);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+
+.arjun-img {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 16px rgba(42, 126, 221, 0.13);
+    position: absolute;
+    top: 180px;
+    right: 50px;
+    transition: box-shadow 0.3s, filter 0.3s;
+    filter: grayscale(10%) brightness(1);
+    animation: fadeInUp 1.2s 0.2s cubic-bezier(0.23, 1, 0.32, 1) backwards;
+}
+
+.arjun-img:hover {
+    box-shadow: 0 8px 32px rgba(42, 126, 221, 0.18);
+    filter: grayscale(0%) brightness(1.08);
+}
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 8px;
+    }
+
+    .arjun-img {
+        margin-top: 2rem;
+        height: 180px;
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin: 40px 0 0 0;
+        padding: 12px 20px;
+    }
+
+    .child {
+        padding: 10px;
+        width: 110%;
+    }
+
+    .arjun-img {
+        height: 120px;
+        width: 120px;
+        position: static;
+    }
+
+    .parent-card {
+        align-items: center;
+        text-align: center;
+
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
