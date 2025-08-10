@@ -39,6 +39,7 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
+
             <div className="hamburger" onClick={handleHamburger} aria-label="Toggle navigation" tabIndex={0} role="button">
                 <span style={{ transform: menuOpen ? 'rotate(45deg) translate(5px, 6px)' : '' }}></span>
                 <span style={{ opacity: menuOpen ? 0 : 1 }}></span>

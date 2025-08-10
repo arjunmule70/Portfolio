@@ -73,6 +73,8 @@ p {
     transform: scale(1.02);
 }
 
+
+
 .arjun-img {
     height: 280px;
     width: 280px;
@@ -113,15 +115,27 @@ p {
 @media (max-width: 600px) {
     .main {
         margin: 40px 0 0 0;
-        padding: 12px 2px;
+        padding: 12px 20px;
     }
 
     .child {
         padding: 10px;
+        width: 110%;
     }
 
     .arjun-img {
         height: 120px;
         width: 120px;
+        position: static;
+    }
+
+    .parent-card {
+        align-items: center;
+        text-align: center;
+
+    }
+
+    p {
+        font-size: 14px;
     }
 }
