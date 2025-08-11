@@ -7,14 +7,14 @@ import Skills from './Components/Skills'
 import Works from './Components/Works'
 import Contact from './Components/Contact'
 import Navbar from './Components/Navbar'
+
 function App() {
 
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path='https://arjunmule70.github.io/home' element={<Home />} />
-        <Route path='Portfolio/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/About' element={<About />} />
         <Route path='/Skills' element={<Skills />} />
         <Route path='/Works' element={<Works />} />
